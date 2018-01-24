@@ -1,0 +1,148 @@
+body, td, th {
+    font-weight:300;
+}
+.full-width-element {
+    width:100%!important;
+}
+.shadow {
+    box-shadow: .5em .5em 1.75em 0em rgba(0,0,0,.2);
+    transition:all linear 250ms;
+
+}
+.futura {
+    font-family:"Futura STD", sans-serif;
+    text-transform:uppercase;
+}
+.temp {
+    background-color:#002A3A;
+}
+.masthead {
+    background-color:#ccc;
+    overflow:hidden;
+    position:relative;
+    max-width:1140px;
+    margin:0 auto;
+}
+.tile {
+    background-color:#ccc;
+    position:relative;
+    transition:all linear 250ms;
+}
+.label {
+    background-color:#00aeff;
+    color:#fff;
+    display:inline-block;
+    font-weight:600;
+    margin:1em 0;
+    padding:.5em 1em;
+}
+.headline {
+    color:#fff;
+    font-size:1.5em;
+    font-weight:200;
+    letter-spacing:.04375em;
+    line-height:1;
+
+}
+.subhead {
+    color:#00aeff;
+    font-weight:600;
+    margin:.5em 0 0;
+    text-transform:uppercase;
+}
+.image {
+    width:100%;
+    z-index:1;
+}
+.image img {
+    width:100%;
+}
+.overlay {
+    background:rgba(0,0,0,.10);
+    background: linear-gradient(transparent, transparent, rgba(0,0,0,1));
+    display:table;
+    height:100%;
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    z-index:2;
+}
+.overlay .text {
+    display:table-cell;
+}
+.masthead .overlay .text .headline {
+    font-size:2.5em;
+}
+.masthead .overlay .text .subhead {
+        font-size:1.5em;
+}
+.tile .overlay .text .subhead {
+    font-size:.75em;
+    letter-spacing:normal;
+}
+.tile .overlay .label {
+    position:absolute;
+    top:0; left:0;
+}
+.section {
+    display:block;
+    font-weight:400;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.section > span {
+    position:relative;
+    display:inline-block;
+}
+.section > span:before, .section span:after {
+    content:"";
+    position:absolute;
+    top:50%;
+    width:9999px;
+    height:1px;
+    background:#ededed;
+}
+.section > span:before {
+    right:100%;
+    margin:0 15px 0 0;
+}
+.section > span:after {
+    left:100%;
+    margin:0 0 0 15px;
+}
+
+.feat-verse {
+}
+.feat-verse .verse-image {
+    display:block;
+    text-align:left;
+    padding:0;
+}
+.feat-verse .verse-image img {
+    border-radius:1em;
+    width:90%;
+}
+.feat-verse .date {
+    color:#999;
+    display:block;
+    font-size:1.75em;
+    font-weight:700;
+    line-height:1;
+    margin:0;
+    text-transform:uppercase;
+}
+.feat-verse .text {
+    font-size:3em;
+    line-height:1.25em;
+}
+.feat-verse .reference {
+    display:block;
+    font-size:1.25em;
+    font-weight:bold;
+    line-height:1;
+    text-transform:uppercase;
+}
+.feat-verse .translation {
+    font-size:1.25em;
+
+}
