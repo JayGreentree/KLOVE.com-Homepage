@@ -27,6 +27,9 @@ body, td, th {
     position:relative;
     transition:all linear 250ms;
 }
+.tile:hover img {
+    transform:scale(1.2);
+}
 .label {
     background-color:#00aeff;
     color:#fff;
@@ -45,6 +48,9 @@ body, td, th {
     font-weight:600;
     text-transform:uppercase;
 }
+.image {
+    overflow:hidden;
+}
 .masthead .image {
     position:absolute;
     top:50%; left:50%;
@@ -53,6 +59,8 @@ body, td, th {
 }
 .image img {
     width:100%;
+    transition:all ease 500ms;
+    transform:scale(1);
 }
 .overlay {
     background:rgba(0,0,0,.10);
@@ -81,15 +89,17 @@ body, td, th {
 }
 .tile .text .headline {
     color:#000;
-    font-size:1.5em;
+    font-size:1.25em;
     font-weight:300;
     line-height:1;
 }
 .tile .text .subhead {
     font-size:.75em;
     letter-spacing:normal;
+    line-height:1
 }
 .tile .label {
+    margin-left:-.5em;
     position:absolute;
     top:0; left:0;
     z-index:1;
@@ -97,6 +107,7 @@ body, td, th {
 .section {
     display:block;
     font-weight:400;
+    letter-spacing:.0675em;
     overflow:hidden;
     white-space:nowrap;
 }
@@ -123,36 +134,46 @@ body, td, th {
 
 .feat-verse {
 }
+.feat-verse h2 {
+    border-bottom:solid 1px #fff;
+    letter-spacing:.0675em;
+    position:relative;
+}
 .feat-verse .verse-image {
     display:block;
     text-align:left;
     padding:0;
 }
 .feat-verse .verse-image img {
-    border-radius:1em;
     width:90%;
 }
 .feat-verse .date {
-    color:#999;
-    display:block;
-    font-size:1.75em;
-    font-weight:700;
-    line-height:1;
-    margin:0;
-    text-transform:uppercase;
+    color:#fff;
+    font-size:.5em;
+    font-weight:300;
+    letter-spacing:0;
+    float:right;
+    text-transform:normal;
 }
 .feat-verse .text {
-    font-size:3em;
+    color:#fff;
+    font-size:2em;
     line-height:1.25em;
 }
 .feat-verse .reference {
+    color:#fff;
     display:block;
-    font-size:1.25em;
+    font-size:1em;
     font-weight:bold;
+    letter-spacing:.0125em;
     line-height:1;
     text-transform:uppercase;
 }
 .feat-verse .translation {
-    font-size:1.25em;
+    color:#fff;
+    font-size:1em;
+    letter-spacing:.025em;
+    line-height:1;
+
 
 }
