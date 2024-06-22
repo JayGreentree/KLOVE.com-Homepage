@@ -121,8 +121,12 @@
                     <div class="card border-0 diffuse">
                         <img class="img-fluid rounded-top" src="img/tile1.jpg">
                         <div class="card-body">
-                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">Video</span>
-                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">Vote For Your Favorite Artists</h4>
+                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">
+                                {% for category in craft.categories().group('news') %}
+                                {{ category.title }}
+                                {% endfor %}
+                        </span>
+                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">{{ entry.title }}</h4>
                         </div>
                     </div>
                 </div>
