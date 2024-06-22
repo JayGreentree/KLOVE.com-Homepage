@@ -116,6 +116,7 @@
         <!-- Tiles -->
         <div class="container py-5">
             <div class="row justify-content-left">
+                {% for entry in craft.entries.section('news').limit('6') %}
                 <div class="col-11 col-md-4 mb-5">
                     <div class="card border-0 diffuse">
                         <img class="img-fluid rounded-top" src="img/tile1.jpg">
@@ -125,42 +126,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-md-4 mb-5">
-                    <div class="card border-0 diffuse">
-                        <img class="img-fluid rounded-top" src="img/tile5.jpg">
-                        <div class="card-body">
-                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">Tour</span>
-                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">TobyMac Hits Deep Tour 2018 — Get Tickets Now</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-md-4 mb-5">
-                    <div class="card border-0 diffuse">
-                        <img class="img-fluid rounded-top" src="img/tile3.jpg">
-                        <div class="card-body">
-                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">Music</span>
-                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">Can You Guess The Top Songs on K-LOVE?</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-md-4 mb-5">
-                    <div class="card border-0 diffuse">
-                        <img class="img-fluid rounded-top" src="img/tile2.jpg">
-                        <div class="card-body">
-                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">Faith</span>
-                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">Hear The Latest From Levi Luskow</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-md-4 mb-5">
-                    <div class="card border-0 diffuse">
-                        <img class="img-fluid rounded-top" src="img/tile4.jpg">
-                        <div class="card-body">
-                            <span class="font-weight-bold text-uppercase text-cyan d-block mb-1">myKLOVE</span>
-                            <h4 class="text-dark font-weight-bold" style="line-height:1.2;">Learning When To Stop and When To Go</h4>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
+                
+
             </div>
         </div>
         
