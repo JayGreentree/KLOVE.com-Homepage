@@ -108,7 +108,7 @@
                         <a class="nav-link text-white ripple text-center " href="#">
                             {% set image = event.image.one() %}
                                 {% if image %}
-                            <img class="" src="{{ image.getUrl('') }}">
+                            <img class="" src="{{ image.getUrl('') }}" alt=" ">
                             {% endif %}
                         </a>
                     </li>
