@@ -33,7 +33,7 @@
         background: #007bef;
     }
     100% {
-        background: #00AEEF;
+        background: #013852;
     }
 }
 
@@ -165,7 +165,7 @@
 }
 
 .text-cyan {
-    color: #00AEEF;
+    color: #013852;
 }
 
 .red {
@@ -186,7 +186,7 @@
 }
 
 .bg-cyan {
-    background-color: #00AEEF;
+    background-color: #013852;
 }
 
 .gray {
@@ -243,7 +243,7 @@
 /* COLOR CARDS & TEXT */
 
 .prime-base {
-    background-color: #00AEEF;
+    background-color: #013852;
     height: 5.4em;
     border-radius: .25em;
 }
@@ -285,11 +285,11 @@
 }
 
 .text-cyan {
-    color: #00AEEF;
+    color: #013852;
 }
 
 .text-grad {
-    background: linear-gradient(45deg, #00AEEF 0%, #00D7F8 100%);
+    background: linear-gradient(45deg, #013852 0%, #00D7F8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -311,7 +311,7 @@
 }
 
 .badge-primary {
-    background-color: #00AEEF;
+    background-color: #013852;
 }
 
 /* TYPOGRAPHY */
@@ -339,7 +339,7 @@ h6 {
 }
 
 a {
-    color: #00AEEF;
+    color: #013852;
 }
 
 a {
@@ -431,13 +431,13 @@ a.hvr-grow, a.hvr-float {
 }
 
 .btn-primary {
-    background-color: #00AEEF;
+    background-color: #013852;
     transition: all 0.5s ease;
 }
 
 .btn-link {
     background-color: #fff;
-    color: #00AEEF;
+    color: #013852;
 }
 
 .btn-primary:hover {
@@ -507,7 +507,7 @@ a.hvr-grow, a.hvr-float {
 .btn-link:hover {
     text-decoration: none;
     background-color: #fff;
-    color: #00AEEF;
+    color: #013852;
     -webkit-box-shadow: 0px 13px 39px 0px rgba(0, 42, 58,0.1);
     -moz-box-shadow: 0px 13px 39px 0px rgba(0, 42, 58,0.1);
     box-shadow: 0px 13px 39px 0px rgba(0, 42, 58,0.1);
@@ -537,13 +537,13 @@ a.hvr-grow, a.hvr-float {
 
 .btn-outline-primary {
     color: #002A3A;
-    border-color: #00AEEF;
+    border-color: #013852;
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    border-color: #00AEEF;
-    background-color: #00AEEF;
+    border-color: #013852;
+    background-color: #013852;
 }
 
 
@@ -644,7 +644,7 @@ a.hvr-grow, a.hvr-float {
     top: 0;
     left: 0;
     pointer-events: none;
-    background-image: radial-gradient(circle, #00AEEF 10%, transparent 10.01%);
+    background-image: radial-gradient(circle, #013852 10%, transparent 10.01%);
     background-repeat: no-repeat;
     background-position: 50%;
     transform: scale(10, 10);
@@ -682,7 +682,7 @@ a.hvr-grow, a.hvr-float {
     position:absolute;
     top:-3%;
     left:50%;
-    background:#00AEEF;
+    background:#013852;
     width:700px;
     height:700px;
     margin-left:-330px;
@@ -696,13 +696,13 @@ a.hvr-grow, a.hvr-float {
 }
 .wave.three {
     animation:drift 110s infinite linear;
-    background:#00AEEF;
+    background:#013852;
     opacity:1;
     mix-blend-mode:soft-light;
 }
 .wave.two {
     animation:drift 120s infinite linear;
-    background:#00AEEF;
+    background:#013852;
     mix-blend-mode:soft-light;
     opacity:1;
 }
