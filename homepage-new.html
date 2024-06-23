@@ -106,6 +106,8 @@
                         </a>
                         <div class="border-bottom d-md-none"></div>
                     </li>
+                    {% set currentEventId = craft.app.request.segment(3) %}
+                    {% for event in craft.calendar.events({id: 'not ' ~ currentEventId,rangeStart: 'today',rangeEnd: '1 month',limit: 1}) %}
                     <li class="nav-item m-2">
                         <a class="nav-link text-white ripple text-center " href="#">
                             <img class="cc_streaminfo" data-type="djs" data-username="jaygreentree">
@@ -113,18 +115,22 @@
                     </li>
                     <li class="nav-item m-2">
                         <a class="nav-link text-white ripple text-center " href="#">
-                            <img class="" src="|">
+                            {% set image = event.image.one() %}
+                                {% if image %}
+                            <img class="" src="{{ image.getUrl('') }}">
+                            {% endif %}
                         </a>
                     </li>
                     <li class="nav-item m-2">
                         <a class="nav-link ripple-2 text-uppercase" href="#">
-                            <small class="">Firstname Lastname</small>
+                            <small class="">{{ event.title }}</small>
                         </a>
                         <small class="">
-                            4:00am-8:00am
+                            {{ event.startDate.format("H:i A") }} - {{ event.endDate.format("H:i A") }}
                         </small></a>
                         <div class="border-bottom d-md-none"></div>
                     </li>
+                    {% endfor %}
                     <li class="nav-item m-2">
                         <a class="nav-link ripple-2" href="#"><span class="icon-kl-star mr-2 fa-2x d-md-none v-align"></span>
                             <form class="form-inline my-2 my-lg-0">
